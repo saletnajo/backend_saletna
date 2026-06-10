@@ -6,7 +6,7 @@
   "license": "MIT",
   "exports": {
     "./_generated": {
-      "types": "./.mercur/_generated/index.ts"
+      "types": "./.mercur/index.d.ts"
     }
   },
   "keywords": [
