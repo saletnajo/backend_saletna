@@ -15,6 +15,10 @@ value**; keys you don't define keep the package translation.
 - `ar.json` — Arabic counterparts. Same key structure as `en.json`.
 - `direction.ts` — applies `dir="rtl"` / `dir="ltr"` and `lang` to `<html>`
   whenever the active language changes (imported from `src/main.tsx`).
+- `allowed-languages.ts` — forces a fallback to English whenever the active
+  language is not `en` or `ar` (e.g. restored from an old `lng` cookie or a
+  user profile saved before the list was restricted). Works together with
+  `../../vite-plugin-restrict-languages.ts` (see below).
 
 ## Correcting an Arabic string
 
@@ -39,3 +43,18 @@ The language picker list (codes, display names, `ltr` flags) is defined inside
 be added there, it is an upstream change. RTL languages currently flagged
 upstream are `ar`, `he`, `fa` — keep `RTL_LANGUAGES` in `direction.ts` in sync
 if that list ever changes.
+
+## Restricting the language picker
+
+The panel is intentionally limited to **English and Arabic**:
+
+- `vite-plugin-restrict-languages.ts` (app root, registered in
+  `vite.config.ts`) filters the built-in 30+ language array out of the
+  `@mercurjs/admin` bundle at build time — once via a Rollup `transform` for
+  `vite build`, and once via an esbuild plugin for `vite dev`, which
+  pre-bundles the package so Rollup transforms never see it.
+- `src/i18n/allowed-languages.ts` enforces the same list at runtime for
+  languages restored from cookies/localStorage or saved user profiles.
+
+To allow more languages, edit `ALLOWED_LANGUAGE_CODES` in the vite plugin and
+`ALLOWED_LANGUAGES` in `allowed-languages.ts` — keep both in sync.

@@ -3,5 +3,863 @@
     "title": "الحقول المخصصة",
     "description": "إدارة الحقول المخصصة والإعدادات الخاصة بك",
     "noFields": "لم يتم إعداد أي حقول مخصصة بعد"
+  },
+  "general": {
+    "areYouSureDescription": "أنت على وشك حذف {{entity}} {{title}}. لا يمكن التراجع عن هذا الإجراء.",
+    "yes": "نعم",
+    "no": "لا",
+    "noRecordsMessageFiltered": "لا توجد سجلات مطابقة لعوامل التصفية"
+  },
+  "actions": {
+    "send": "إرسال"
+  },
+  "app": {
+    "search": {
+      "groups": {
+        "seller": "البائعون"
+      }
+    },
+    "keyboardShortcuts": {
+      "navigation": {
+        "goToSellers": "البائعون",
+        "goToPayouts": "المدفوعات"
+      }
+    },
+    "nav": {
+      "main": {
+        "marketplace": "السوق",
+        "marketplaceSettings": "إعدادات السوق"
+      }
+    }
+  },
+  "addresses": {
+    "title": "العناوين"
+  },
+  "products": {
+    "associatedStore": "المتجر المرتبط",
+    "media": {
+      "fileTooLarge": "ملف واحد أو أكثر يتجاوز الحد الأقصى لحجم الملف {{size}}: {{name}}"
+    },
+    "columns": {
+      "product_display": "المنتج",
+      "variants_count": "البدائل",
+      "sales_channels_display": "قنوات البيع",
+      "collection": "المجموعة",
+      "status": "الحالة",
+      "thumbnail": "الصورة المصغرة",
+      "title": "العنوان",
+      "handle": "المقبض",
+      "created_at": "تاريخ الإنشاء",
+      "updated_at": "تاريخ التحديث"
+    },
+    "variants": {
+      "filtered": {
+        "description": "لا توجد بدائل مطابقة لمعايير التصفية الحالية."
+      }
+    },
+    "stock": {
+      "tooltips": {
+        "alreadyManaged": "هذا العنصر المخزني قابل للتحرير بالفعل ضمن {{title}}.",
+        "alreadyManagedWithSku": "هذا العنصر المخزني قابل للتحرير بالفعل ضمن {{title}} ({{sku}})."
+      }
+    },
+    "shippingProfile": {
+      "edit": {
+        "toasts": {
+          "success": "تم تحديث ملف الشحن لـ {{title}} بنجاح."
+        }
+      }
+    }
+  },
+  "inventory": {
+    "manageLocationQuantity": "إدارة كمية الموقع",
+    "quantityAcrossLocations": "{{quantity}} عبر {{locations}} من المواقع",
+    "levelDeleted": "تم حذف مستوى المخزون بنجاح.",
+    "reservation": {
+      "errors": {
+        "idRequired": "معرّف عنصر المخزون مطلوب"
+      }
+    }
+  },
+  "customers": {
+    "addresses": {
+      "title": "العناوين",
+      "fields": {
+        "addressName": "اسم العنوان",
+        "address1": "العنوان 1",
+        "address2": "العنوان 2",
+        "city": "المدينة",
+        "province": "المحافظة",
+        "postalCode": "الرمز البريدي",
+        "country": "الدولة",
+        "phone": "الهاتف",
+        "company": "الشركة",
+        "countryCode": "رمز الدولة",
+        "provinceCode": "رمز المحافظة"
+      },
+      "create": {
+        "header": "إنشاء عنوان",
+        "hint": "إنشاء عنوان جديد للعميل.",
+        "successToast": "تم إنشاء العنوان بنجاح."
+      }
+    }
+  },
+  "orders": {
+    "giftCardsStoreCreditLines": "بطاقات الهدايا وخطوط الائتمان",
+    "creditLines": {
+      "title": "خطوط الائتمان",
+      "total": "مجموع جميع خطوط الائتمان",
+      "creditOrDebit": "دائن / مدين",
+      "createCreditLine": "إنشاء خط ائتمان",
+      "createCreditLineSuccess": "تم إنشاء خط الائتمان بنجاح",
+      "createCreditLineError": "خطأ في إنشاء خط الائتمان",
+      "createCreditLineDescription": "إنشاء خط ائتمان بمبلغ {{amount}}",
+      "operation": "العملية",
+      "credit": "دائن",
+      "creditDescription": "يضيف مبلغًا موجبًا إلى الطلب",
+      "debit": "مدين",
+      "debitDescription": "يخصم مبلغًا سالبًا من الطلب"
+    },
+    "balanceSettlement": {
+      "title": "تسوية الرصيد",
+      "settlementType": "نوع التسوية",
+      "settlementTypes": {
+        "paymentMethod": "طريقة الدفع",
+        "paymentMethodDescription": "استرداد المبلغ إلى طريقة الدفع",
+        "creditLine": "رصيد المتجر",
+        "creditLineDescription": "استرداد المبلغ كرصيد في المتجر"
+      }
+    },
+    "summary": {
+      "totalAfterDiscount": "الإجمالي بعد الخصم"
+    },
+    "payment": {
+      "totalStoreCreditRefunds": "إجمالي المبالغ المستردة كرصيد متجر"
+    },
+    "edits": {
+      "duplicateItemErrorToast": "لا يمكن تكرار العنصر: معرّف البديل مفقود"
+    },
+    "returns": {
+      "estDifference": "الفرق المقدر"
+    },
+    "allocateItems": {
+      "toast": {
+        "error": "فشل تخصيص العناصر التالية: {{items}}"
+      }
+    },
+    "fulfillment": {
+      "markAsPickedUp": "تحديد كمستلم",
+      "status": {
+        "awaitingPickup": "في انتظار الاستلام",
+        "awaitingShipping": "في انتظار الشحن",
+        "awaitingDelivery": "في انتظار التسليم",
+        "notFulfilled": "غير منفذ",
+        "partiallyFulfilled": "منفذ جزئيًا",
+        "fulfilled": "منفذ",
+        "partiallyShipped": "مشحون جزئيًا",
+        "shipped": "مشحون",
+        "delivered": "تم التسليم",
+        "partiallyDelivered": "تم التسليم جزئيًا",
+        "partiallyReturned": "مرتجع جزئيًا",
+        "returned": "مرتجع",
+        "canceled": "ملغى",
+        "requiresAction": "يتطلب إجراءً"
+      },
+      "toast": {
+        "fulfillmentPickedUp": "تم تحديد التنفيذ كمستلم بنجاح",
+        "created": "تم إنشاء التنفيذ بنجاح",
+        "canceled": "تم إلغاء التنفيذ بنجاح",
+        "fulfillmentShipped": "لا يمكن إلغاء تنفيذ تم شحنه بالفعل",
+        "fulfillmentDelivered": "تم تحديد التنفيذ كمُسلَّم بنجاح"
+      },
+      "labelLink": "التسمية",
+      "trackingLabel": "التتبع",
+      "shippingFromLabel": "الشحن من",
+      "itemsLabel": "العناصر"
+    },
+    "fields": {
+      "groupId": "معرّف المجموعة",
+      "orderIds": "معرّفات الطلبات",
+      "vendor": "البائع",
+      "vendorsCount_one": "{{count}} بائع",
+      "vendorsCount_other": "{{count}} بائعين"
+    }
+  },
+  "payouts": {
+    "domain": "المدفوعات",
+    "list": {
+      "empty": "لم يتم العثور على مدفوعات"
+    },
+    "status": {
+      "paid": "مدفوع",
+      "processing": "قيد المعالجة",
+      "pending": "معلق",
+      "failed": "فشل",
+      "canceled": "ملغى"
+    }
+  },
+  "stockLocations": {
+    "list": {
+      "noRecordsMessage": "لا توجد سجلات",
+      "noRecordsMessageEmpty": "لم يتم العثور على مواقع",
+      "noRecordsMessageFiltered": "لم يتم العثور على مواقع مطابقة لعوامل التصفية"
+    },
+    "delete": {
+      "successToast": "تم حذف الموقع \"{{name}}\" بنجاح."
+    },
+    "sidebar": {
+      "shippingOptionTypes": {
+        "label": "أنواع خيارات الشحن",
+        "description": "تجميع خيارات الشحن حسب الأنواع"
+      }
+    },
+    "salesChannels": {
+      "hint": "إدارة قنوات البيع المرتبطة بهذا الموقع."
+    },
+    "pickupOptions": {
+      "edit": {
+        "header": "تحرير خيار الاستلام"
+      }
+    },
+    "shippingOptions": {
+      "create": {
+        "pickup": {
+          "header": "إنشاء خيار استلام لـ {{zone}}",
+          "hint": "أنشئ خيار استلام جديدًا لتحديد كيفية استلام المنتجات من هذا الموقع.",
+          "label": "خيارات الاستلام",
+          "successToast": "تم إنشاء خيار الاستلام {{name}} بنجاح."
+        }
+      },
+      "fields": {
+        "count": {
+          "pickup_one": "{{count}} خيار استلام",
+          "pickup_other": "{{count}} من خيارات الاستلام"
+        },
+        "type": "نوع خيار الشحن"
+      },
+      "conditionalPrices": {
+        "header": "الأسعار المشروطة لـ {{name}}",
+        "summaries": {
+          "range": "إذا كان <0>{{attribute}}</0> بين <1>{{gte}}</1> و<2>{{lte}}</2>",
+          "greaterThan": "إذا كان <0>{{attribute}}</0> ≥ <1>{{gte}}</1>",
+          "lessThan": "إذا كان <0>{{attribute}}</0> ≤ <1>{{lte}}</1>"
+        }
+      }
+    }
+  },
+  "taxRegions": {
+    "create": {
+      "errors": {
+        "missingProvider": "المزوّد مطلوب عند إنشاء منطقة ضريبية.",
+        "missingCountry": "الدولة مطلوبة عند إنشاء منطقة ضريبية."
+      }
+    },
+    "edit": {
+      "header": "تحرير المنطقة الضريبية",
+      "hint": "تحرير تفاصيل المنطقة الضريبية.",
+      "successToast": "تم تحديث المنطقة الضريبية بنجاح."
+    },
+    "provider": {
+      "header": "مزوّد الضرائب"
+    },
+    "fields": {
+      "taxProvider": "مزوّد الضرائب",
+      "targets": {
+        "options": {
+          "shippingOption": "خيارات الشحن"
+        },
+        "placeholders": {
+          "shippingOption": "ابحث عن خيارات الشحن"
+        },
+        "tags": {
+          "shippingOption": "خيار الشحن"
+        }
+      }
+    }
+  },
+  "promotions": {
+    "fields": {
+      "taxInclusive": "شامل الضريبة",
+      "conditions": {
+        "target-rules": {
+          "order": {
+            "title": "ما العناصر التي سيتم تطبيق العرض الترويجي عليها؟",
+            "description": "سيتم تطبيق العرض الترويجي على العناصر التي تطابق الشروط التالية."
+          },
+          "shipping_methods": {
+            "title": "ما طرق الشحن التي سيتم تطبيق العرض الترويجي عليها؟",
+            "description": "سيتم تطبيق العرض الترويجي على طرق الشحن التي تطابق الشروط التالية."
+          },
+          "items": {
+            "title": "ما العناصر التي سيتم تطبيق العرض الترويجي عليها؟",
+            "description": "سيتم تطبيق العرض الترويجي على العناصر التي تطابق الشروط التالية."
+          }
+        }
+      }
+    },
+    "form": {
+      "campaign": {
+        "existing": {
+          "currencyHint": "تم تعطيل الحملات ذات عملة الميزانية لأن هذا العرض الترويجي لا يحتوي على عملة محددة. عيّن عملة للعرض الترويجي أولاً."
+        }
+      },
+      "taxInclusive": {
+        "title": "هل يشمل العرض الترويجي الضرائب؟",
+        "description": "فعّل هذا الحقل لتطبيق العرض الترويجي بعد الضرائب"
+      },
+      "value": {
+        "invalid": "قيمة العرض الترويجي غير صالحة"
+      }
+    }
+  },
+  "campaigns": {
+    "fields": {
+      "totalUsedByAttribute": "إجمالي المستخدم"
+    },
+    "budget": {
+      "fields": {
+        "budgetAttribute": "تحديد الاستخدام لكل",
+        "budgetAttributeTooltip": "حدد عدد المرات التي يمكن فيها استخدام العرض الترويجي من قبل عميل أو بريد إلكتروني معين.",
+        "totalUsedByAttribute": "حد الميزانية لكل: {{attribute}}"
+      },
+      "type": {
+        "useByAttribute": {
+          "title": "الاستخدام حسب السمة (معرف العميل، البريد الإلكتروني، إلخ.)",
+          "description": "حدد حدًا لعدد المرات التي يمكن فيها استخدام العرض الترويجي بقيمة سمة معينة."
+        }
+      }
+    }
+  },
+  "users": {
+    "status": {
+      "active": "نشط",
+      "pending": "معلق"
+    },
+    "roles": {
+      "administration": "إدارة المتجر",
+      "inventoryManagement": "إدارة المخزون",
+      "orderManagement": "إدارة الطلبات",
+      "accounting": "المحاسبة",
+      "support": "الدعم"
+    },
+    "deleteUserSuccess": "تم حذف المستخدم {{name}} بنجاح"
+  },
+  "marketplace": {
+    "domain": "السوق",
+    "manageMarketplaceDetails": "إدارة تفاصيل السوق",
+    "edit": {
+      "header": "تحرير السوق"
+    }
+  },
+  "store": {
+    "defaultSalesChannel": "قناة البيع الافتراضية",
+    "defaultLocation": "الموقع الافتراضي",
+    "logo": "الشعار",
+    "banner": "البانر",
+    "address": {
+      "header": "العنوان",
+      "defaultName": "المقر الرئيسي",
+      "nameLabel": "الاسم",
+      "apartmentLabel": "شقة، جناح، إلخ.",
+      "empty": {
+        "title": "لا يوجد عنوان",
+        "message": "لا توجد سجلات للعرض"
+      },
+      "edit": {
+        "header": "تحرير العنوان",
+        "description": "تحديث عنوان هذا المتجر.",
+        "successToast": "تم تحديث العنوان"
+      },
+      "validation": {
+        "nameRequired": "يرجى إدخال اسم",
+        "countryRequired": "يرجى تحديد دولة"
+      }
+    },
+    "paymentDetails": {
+      "header": "تفاصيل الدفع",
+      "empty": {
+        "title": "لا توجد تفاصيل دفع",
+        "message": "لا توجد سجلات للعرض"
+      },
+      "edit": {
+        "header": "تحرير تفاصيل الدفع",
+        "description": "تحديث تفاصيل الدفع لهذا المتجر.",
+        "successToast": "تم تحديث تفاصيل الدفع"
+      },
+      "fields": {
+        "countryCode": "الدولة",
+        "holderName": "اسم الحساب",
+        "bankName": "اسم البنك",
+        "iban": "رقم الآيبان (IBAN)",
+        "bic": "SWIFT / BIC",
+        "swiftBic": "SWIFT / BIC",
+        "routingNumber": "رقم التوجيه",
+        "achRoutingNumber": "رقم التوجيه ACH",
+        "accountNumber": "رقم الحساب"
+      },
+      "validation": {
+        "countryRequired": "يرجى تحديد دولة",
+        "accountNameRequired": "يرجى إدخال اسم الحساب"
+      }
+    },
+    "professionalDetails": {
+      "header": "تفاصيل الشركة",
+      "empty": {
+        "title": "لا توجد تفاصيل شركة",
+        "message": "لا توجد سجلات للعرض"
+      },
+      "edit": {
+        "header": "تحرير تفاصيل الشركة",
+        "description": "تحديث تفاصيل الشركة لهذا المتجر.",
+        "successToast": "تم تحديث تفاصيل الشركة"
+      },
+      "fields": {
+        "corporateName": "الشركة",
+        "registrationNumber": "رقم التسجيل",
+        "taxId": "الرقم الضريبي"
+      }
+    },
+    "timeOff": {
+      "header": "الإجازة",
+      "empty": {
+        "title": "لا توجد إجازات بعد",
+        "message": "لا توجد إجازات مجدولة لهذا المتجر",
+        "action": "إنشاء"
+      }
+    },
+    "scheduledClosure": {
+      "header": "الإغلاق المجدول",
+      "edit": {
+        "header": "جدولة إغلاق المتجر",
+        "description": "تكوين تواريخ الإغلاق المجدول لهذا المتجر.",
+        "successToast": "تم تحديث الإغلاق المجدول"
+      },
+      "fields": {
+        "closedFrom": "الإغلاق من",
+        "closedTo": "الإغلاق حتى",
+        "closedToHint": "إذا تُرك فارغًا، سيبقى المتجر مغلقًا إلى أجل غير مسمى."
+      }
+    },
+    "subscription": {
+      "header": "خطة الاشتراك",
+      "month": "شهر"
+    }
+  },
+  "salesChannels": {
+    "list": {
+      "empty": {
+        "heading": "لم يتم العثور على قنوات بيع",
+        "description": "بمجرد إنشاء قناة بيع، ستظهر هنا."
+      },
+      "filtered": {
+        "heading": "لا توجد نتائج",
+        "description": "لا توجد قنوات بيع مطابقة لمعايير التصفية الحالية."
+      }
+    }
+  },
+  "attributes": {
+    "domain": "سمات المنتجات",
+    "subtitle": "إدارة سمات المنتجات وقيمها الممكنة.",
+    "list": {
+      "title": "سمات المنتجات",
+      "noRecordsMessage": "لم يتم إنشاء أي سمات منتجات بعد."
+    },
+    "create": {
+      "header": "إنشاء سمة",
+      "subtitle": "تعريف سمة منتج جديدة.",
+      "tabs": {
+        "details": "التفاصيل",
+        "type": "النوع"
+      },
+      "fillNameWarning": "يرجى ملء حقل الاسم على الأقل قبل الانتقال إلى تكوين النوع.",
+      "possibleValuesRequired": "مطلوب قيمة ممكنة واحدة على الأقل لهذا النوع",
+      "successToast": "تم إنشاء السمة \"{{name}}\" بنجاح."
+    },
+    "edit": {
+      "header": "تحرير السمة",
+      "subtitle": "تحديث تفاصيل السمة.",
+      "successToast": "تم تحديث السمة \"{{name}}\" بنجاح."
+    },
+    "editPossibleValue": {
+      "header": "تحرير القيمة الممكنة",
+      "subtitle": "تحديث تفاصيل القيمة الممكنة.",
+      "successToast": "تم تحديث القيمة الممكنة \"{{value}}\" بنجاح."
+    },
+    "createPossibleValues": {
+      "header": "إنشاء قيم",
+      "subtitle": "إنشاء قيم إضافية للسمة \"{{name}}\".",
+      "tabs": {
+        "values": "القيم",
+        "organizeRanking": "تنظيم الترتيب"
+      },
+      "addValue": "إضافة قيمة",
+      "enterValue": "أدخل القيمة",
+      "successToast": "تم إنشاء القيم بنجاح."
+    },
+    "deletePossibleValue": {
+      "title": "حذف القيمة",
+      "confirmation": "أنت على وشك حذف القيمة الممكنة \"{{value}}\". لا يمكن التراجع عن هذا الإجراء.",
+      "successToast": "تم حذف القيمة الممكنة \"{{value}}\" بنجاح.",
+      "inUseMessage": "لا يمكن حذف القيمة {{value}} لأنها مستخدمة حاليًا من قبل بائع واحد أو أكثر في بدائل منتجاتهم. لتحريرها، اطلب من البائعين تحديث منتجاتهم أولاً."
+    },
+    "delete": {
+      "title": "حذف السمة",
+      "confirmation": "أنت على وشك حذف السمة \"{{name}}\". لا يمكن التراجع عن هذا الإجراء.",
+      "successToast": "تم حذف السمة \"{{name}}\" بنجاح.",
+      "inUseMessage": "لا يمكن حذف السمة {{name}} لأنها مستخدمة حاليًا من قبل بائع واحد أو أكثر في بدائل منتجاتهم. لحذفها، اطلب من البائعين تحديث منتجاتهم أولاً.",
+      "gotIt": "فهمت"
+    },
+    "fields": {
+      "name": "الاسم",
+      "handle": "المقبض",
+      "description": "الوصف",
+      "type": "النوع",
+      "filterable": "قابلة للتصفية",
+      "required": "مطلوبة",
+      "global": "عامة",
+      "category": "الفئة",
+      "categories": "فئات المنتجات",
+      "productAttribute": "سمة المنتج",
+      "values": "القيم",
+      "possibleValues": "القيم الممكنة",
+      "value": "القيمة",
+      "rank": "الترتيب",
+      "metadata": "البيانات الوصفية"
+    },
+    "type": {
+      "select": "اختيار فردي",
+      "multivalue": "اختيار متعدد",
+      "unit": "وحدة",
+      "toggle": "تبديل",
+      "text_area": "منطقة نص"
+    },
+    "selectCategory": {
+      "title": "اختر الفئة",
+      "description": "يرجى اختيار الفئة التي تنطبق عليها هذه السمة.",
+      "placeholder": "اختر الفئة"
+    },
+    "hints": {
+      "global": "عند التمكين، تنطبق هذه السمة على جميع المنتجات بغض النظر عن الفئة.",
+      "categoryInheritance": "سترث الفئات الفرعية هذه السمة."
+    }
+  },
+  "refundReasons": {
+    "domain": "أسباب الاسترداد",
+    "subtitle": "إدارة أسباب إصدار المبالغ المستردة.",
+    "calloutHint": "إدارة الأسباب لتصنيف المبالغ المستردة.",
+    "editReason": "تحرير سبب الاسترداد",
+    "create": {
+      "header": "إضافة سبب استرداد",
+      "subtitle": "حدد الأسباب الأكثر شيوعًا للاسترداد.",
+      "hint": "أنشئ سبب استرداد جديدًا لتصنيف المبالغ المستردة.",
+      "successToast": "تم إنشاء سبب الاسترداد {{label}} بنجاح."
+    },
+    "edit": {
+      "header": "تحرير سبب الاسترداد",
+      "subtitle": "تحرير قيمة سبب الاسترداد.",
+      "successToast": "تم تحديث سبب الاسترداد {{label}} بنجاح."
+    },
+    "delete": {
+      "confirmation": "أنت على وشك حذف سبب الاسترداد \"{{label}}\". لا يمكن التراجع عن هذا الإجراء.",
+      "successToast": "تم حذف سبب الاسترداد بنجاح."
+    },
+    "fields": {
+      "label": {
+        "label": "التسمية",
+        "placeholder": "بادرة حسن نية"
+      },
+      "code": {
+        "label": "الرمز",
+        "placeholder": "gesture_of_goodwill"
+      },
+      "description": {
+        "label": "الوصف",
+        "placeholder": "مر العميل بتجربة تسوق سيئة"
+      }
+    }
+  },
+  "login": {
+    "sessionExpired": "انتهت الجلسة",
+    "title": "مرحبًا بك في {{name}}"
+  },
+  "shippingOptionTypes": {
+    "domain": "أنواع خيارات الشحن",
+    "subtitle": "تنظيم خيارات الشحن الخاصة بك في أنواع.",
+    "create": {
+      "header": "إنشاء نوع خيار شحن",
+      "hint": "أنشئ نوع خيار شحن جديدًا لتصنيف خيارات الشحن الخاصة بك.",
+      "successToast": "تم إنشاء نوع خيار الشحن {{label}} بنجاح."
+    },
+    "edit": {
+      "header": "تحرير نوع خيار الشحن",
+      "successToast": "تم تحديث نوع خيار الشحن {{label}} بنجاح."
+    },
+    "delete": {
+      "confirmation": "أنت على وشك حذف نوع خيار الشحن \"{{label}}\". لا يمكن التراجع عن هذا الإجراء.",
+      "successToast": "تم حذف نوع خيار الشحن \"{{label}}\" بنجاح."
+    },
+    "fields": {
+      "label": "التسمية",
+      "code": "الرمز",
+      "description": "الوصف"
+    }
+  },
+  "labels": {
+    "selectValue": "تحديد قيمة",
+    "selectValues": "تحديد القيم"
+  },
+  "fields": {
+    "reference": "المرجع",
+    "reference_id": "معرف المرجع",
+    "selectPlaceholder": "اختر",
+    "enabledInStore": "مفعّل في المتجر",
+    "isReturn": "للإرجاع",
+    "promotionCode": "رمز العرض الترويجي",
+    "serviceZone": "منطقة الخدمة",
+    "website": "الموقع الإلكتروني",
+    "premium": "متجر مميز",
+    "professional": "احترافي",
+    "creditTotal": "إجمالي خطوط الائتمان"
+  },
+  "views": {
+    "save": "حفظ",
+    "saveAsNew": "حفظ كطريقة عرض جديدة",
+    "updateDefaultForEveryone": "تحديث الافتراضي للجميع",
+    "updateViewName": "تحديث طريقة العرض",
+    "prompts": {
+      "updateDefault": {
+        "title": "تحديث طريقة العرض الافتراضية",
+        "description": "سيؤدي هذا إلى تحديث طريقة العرض الافتراضية لجميع المستخدمين. هل أنت متأكد؟",
+        "confirmText": "تحديث للجميع",
+        "cancelText": "إلغاء"
+      },
+      "updateView": {
+        "title": "تحديث طريقة العرض",
+        "description": "هل أنت متأكد من رغبتك في تحديث \"{{name}}\"؟",
+        "confirmText": "تحديث",
+        "cancelText": "إلغاء"
+      }
+    }
+  },
+  "requests": {
+    "domain": "طلبات الموافقة",
+    "seller": "البائع",
+    "product": "المنتج",
+    "review-remove": "إزالة مراجعة",
+    "return": "إرجاع طلب",
+    "product-collection": "مجموعة منتجات",
+    "product-category": "فئة منتجات",
+    "product-tag": "وسم منتجات",
+    "product-type": "نوع منتجات",
+    "product-update": "تحديث منتج"
+  },
+  "stores": {
+    "domain": "المتاجر",
+    "handleTooltip": "يُستخدم المقبض كجزء من رابط URL للمتجر. اتركه فارغًا ليتم إنشاؤه تلقائيًا من الاسم.",
+    "fields": {
+      "name": "الاسم",
+      "handle": "المقبض",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "logo": "الشعار",
+      "cover_image": "صورة الغلاف",
+      "address": "العنوان",
+      "address_1": "سطر العنوان 1",
+      "address_2": "سطر العنوان 2",
+      "postal_code": "الرمز البريدي",
+      "city": "المدينة",
+      "province": "المحافظة",
+      "country_code": "رمز الدولة",
+      "seller": "البائع",
+      "premium": "مميز"
+    },
+    "status": {
+      "open": "نشط",
+      "pending_approval": "معلق",
+      "pendingApproval": "معلق",
+      "suspended": "غير نشط",
+      "terminated": "منتهي"
+    },
+    "premium": {
+      "yes": "نعم",
+      "no": "لا",
+      "description": "إذا تم التحديد، سيتم تمييز المتجر بشارة خاصة للاستخدام الداخلي أو لأغراض ترويجية."
+    },
+    "invite": {
+      "button": "دعوة",
+      "header": "دعوة متجر",
+      "hint": "دعوة متجر جديد إلى سوقك",
+      "successToast": "تم إرسال الدعوة إلى {{email}}",
+      "errorToast": "فشل إرسال الدعوة"
+    },
+    "members": {
+      "mainAdmin": "المسؤول",
+      "addUser": {
+        "header": "إضافة مستخدم",
+        "action": "إضافة",
+        "hint": "أضف مستخدمًا جديدًا لإدارة هذا المتجر. يمكنك اختيار مستخدم موجود أو دعوة مستخدم جديد.",
+        "addedToast": "تمت إضافة المستخدم بنجاح.",
+        "invitedToast": "تمت دعوة المستخدم بنجاح.",
+        "validation": {
+          "roleRequired": "يرجى اختيار دور"
+        }
+      },
+      "invite": {
+        "resendSuccess": "تمت إعادة إرسال الدعوة إلى {{email}}",
+        "deleteSuccess": "تم حذف الدعوة الخاصة بـ {{email}}",
+        "linkCopied": "تم نسخ رابط الدعوة إلى الحافظة",
+        "copyFailed": "فشل نسخ رابط الدعوة",
+        "noVendorUrl": "رابط لوحة البائع غير مكوَّن على الخادم (MERCUR_VENDOR_URL)"
+      }
+    },
+    "edit": {
+      "header": "تحرير المتجر",
+      "mediaHeading": "الوسائط",
+      "mediaTipLabel": "نصيحة:",
+      "mediaTipBody": "ستكون هذه الوسائط مرئية على واجهة المتجر.",
+      "uploadLogoLabel": "رفع الشعار",
+      "uploadLogoHint": "اسحب وأفلت شعارك هنا أو انقر للرفع.",
+      "uploadBannerLabel": "رفع البانر",
+      "uploadBannerHint": "اسحب وأفلت البانر هنا أو انقر للرفع.",
+      "successToast": "تم تحديث المتجر {{name}} بنجاح."
+    },
+    "create": {
+      "tabs": {
+        "details": "التفاصيل",
+        "users": "المسؤول"
+      },
+      "header": "التفاصيل",
+      "usersHeader": "المسؤول",
+      "usersHint": "عيّن مسؤولاً لإدارة هذا المتجر. اختر مستخدمًا موجودًا أو ادعُ مستخدمًا جديدًا.",
+      "usersHintSecondary": "بمجرد إنشاء المتجر، سيتلقى المستخدم المحدد دعوة للانضمام.",
+      "ownerEmail": "البريد الإلكتروني للمالك",
+      "ownerEmailHint": "سيتم منح المالك دور إدارة المتجر.",
+      "successToast": "تم إنشاء المتجر بنجاح",
+      "validation": {
+        "nameRequired": "يرجى إدخال اسم",
+        "emailRequired": "يرجى إدخال بريد إلكتروني",
+        "emailInvalid": "يرجى إدخال بريد إلكتروني صالح",
+        "currencyRequired": "يرجى اختيار عملة"
+      }
+    },
+    "request": {
+      "title": "طلب متجر",
+      "description": "قدّم {{requester}} طلب متجر. راجع التفاصيل، وأجرِ أي تحديثات لازمة، ثم اختر ما إذا كنت ستؤكد المتجر وتنشره أو سترفض الطلب.",
+      "confirm": "تأكيد",
+      "reject": "رفض",
+      "confirmTitle": "تأكيد الطلب",
+      "confirmDescription": "أنت على وشك تأكيد طلب المتجر هذا.",
+      "rejectTitle": "رفض الطلب",
+      "rejectDescription": "أنت على وشك رفض طلب المتجر هذا.",
+      "noteLabel": "ملاحظات للبائع",
+      "notePlaceholder": "حدد التغييرات التي أجريتها أو الطلبات الإضافية",
+      "confirmNotePlaceholder": "حدد التغييرات التي أجريتها أو الطلبات الإضافية",
+      "rejectNotePlaceholder": "اشرح سبب رفضك للطلب أو اقترح تغييرات",
+      "confirmSuccess": "تم تأكيد طلب المتجر بنجاح.",
+      "rejectSuccess": "تم رفض طلب المتجر بنجاح."
+    },
+    "actions": {
+      "approve": {
+        "label": "الموافقة",
+        "title": "الموافقة على المتجر",
+        "description": "هل أنت متأكد من رغبتك في الموافقة على هذا المتجر؟",
+        "success": "تمت الموافقة على المتجر"
+      },
+      "reject": {
+        "label": "رفض",
+        "title": "رفض المتجر",
+        "description": "هل أنت متأكد من رغبتك في رفض هذا المتجر؟",
+        "success": "تم رفض المتجر"
+      },
+      "edit": {
+        "label": "تحرير"
+      },
+      "delete": {
+        "label": "حذف",
+        "title": "حذف المتجر",
+        "description": "هل أنت متأكد من رغبتك في حذف هذا المتجر؟ لا يمكن التراجع عن هذا الإجراء.",
+        "success": "تم حذف المتجر",
+        "successToast": "تم حذف {{count}} متجر (متاجر)",
+        "errorToast": "فشل حذف المتجر (المتاجر)"
+      }
+    },
+    "bulkEdit": {
+      "successToast": "تم تحديث {{count}} متجر (متاجر)",
+      "emptyHeading": "لم يتم اختيار متاجر",
+      "emptyDescription": "اختر متاجر من القائمة لتحريرها هنا."
+    }
+  },
+  "messages": {
+    "domain": "الرسائل"
+  },
+  "configuration": {
+    "domain": "إعدادات كتالوج المنتجات"
+  },
+  "algolia": {
+    "domain": "محرك بحث Algolia"
+  },
+  "commission": {
+    "domain": "إعدادات العمولة"
+  },
+  "commissionLines": {
+    "domain": "بنود العمولة"
+  },
+  "commissionRates": {
+    "domain": "معدلات العمولة",
+    "description": "إدارة معدلات العمولة وقواعدها لسوقك.",
+    "create": {
+      "header": "إنشاء معدل عمولة",
+      "description": "تكوين معدل عمولة جديد لسوقك.",
+      "successToast": "تم إنشاء معدل العمولة بنجاح"
+    },
+    "edit": {
+      "header": "تحرير معدل العمولة",
+      "successToast": "تم تحديث معدل العمولة بنجاح"
+    },
+    "delete": {
+      "description": "هل أنت متأكد من رغبتك في حذف معدل العمولة \"{{name}}\"؟",
+      "successToast": "تم حذف معدل العمولة بنجاح"
+    },
+    "rules": {
+      "empty": "لا توجد قواعد مكوَّنة"
+    },
+    "fields": {
+      "name": "الاسم",
+      "code": "الرمز",
+      "type": {
+        "label": "النوع",
+        "percentage": "نسبة مئوية",
+        "fixed": "ثابت"
+      },
+      "target": {
+        "label": "الهدف",
+        "item": "العنصر",
+        "shipping": "الشحن"
+      },
+      "currencyCode": "رمز العملة",
+      "currencyPlaceholder": "اختر العملة",
+      "rate": "المعدل",
+      "minAmount": "الحد الأدنى للمبلغ",
+      "priority": "الأولوية",
+      "enabled": "مفعّل",
+      "enabledHint": "تمكين أو تعطيل معدل العمولة هذا.",
+      "includeTax": "تضمين الضريبة",
+      "includeTaxHint": "تضمين الضريبة في حساب العمولة."
+    },
+    "status": {
+      "enabled": "مفعّل",
+      "disabled": "معطّل"
+    },
+    "toggle": {
+      "enabledToast": "تم تمكين معدل العمولة بنجاح",
+      "disabledToast": "تم تعطيل معدل العمولة بنجاح"
+    }
+  },
+  "customerGroups": {
+    "list": {
+      "filtered": {
+        "description": "لا توجد مجموعات عملاء مطابقة لمعايير التصفية الحالية."
+      }
+    }
   }
 }
