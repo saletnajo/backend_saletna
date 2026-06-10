@@ -18,9 +18,11 @@ value**; keys you don't define keep the package translation.
 
 ## Correcting an Arabic string
 
-1. Find the key. For built-in panel strings, search the English text in
-   `node_modules/@mercurjs/vendor/dist/` (the `ar`/`en` catalogs are bundled
-   there) or in the upstream source:
+1. Find the key in `reference/en.json` (search by the English text you see in
+   the UI) and check the current Arabic value in `reference/ar.json`. These are
+   readable copies of the catalogs bundled inside `@mercurjs/vendor@2.1.6` —
+   reference only, never loaded; regenerate them after a package upgrade.
+   Upstream source:
    https://github.com/mercurjs/mercur/tree/main/packages/vendor/src/i18n/translations
 2. Add the key with the corrected Arabic value to `ar.json` here, keeping the
    exact same nested key path. Do not edit `node_modules` — it is overwritten
