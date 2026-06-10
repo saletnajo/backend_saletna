@@ -12,6 +12,7 @@ __metadata:
     "@acme/api": "workspace:*"
     "@mercurjs/admin": "npm:2.1.6"
     "@types/node": "npm:^24.10.1"
+    i18next: "npm:23.7.11"
   languageName: unknown
   linkType: soft
 
@@ -48,6 +49,7 @@ __metadata:
     "@acme/api": "workspace:*"
     "@mercurjs/vendor": "npm:2.1.6"
     "@types/node": "npm:^24.10.1"
+    i18next: "npm:23.7.11"
   languageName: unknown
   linkType: soft
 
