@@ -1,0 +1,39 @@
+# MercurJS Documentation
+
+> Mercur is an open-source AI-native marketplace framework built on MedusaJS v2. It provides block-based architecture for building multi-vendor marketplaces with seller management, commissions, order splitting, payouts, admin panel, and vendor portal. Code is copied directly into your project — full ownership, no black-box dependencies.
+
+## Docs
+
+- [LLMs](https://docs.mercurjs.com/ai-development/llms.md): Feed Mercur documentation directly to LLMs for accurate, context-aware assistance.
+- [MCP Server](https://docs.mercurjs.com/ai-development/mcp.md): Connect your AI environment to Mercur documentation via Model Context Protocol.
+- [Skills](https://docs.mercurjs.com/ai-development/skills.md): Pre-built AI workflows that ship with every Mercur project for safe, guided development.
+- [Commission](https://docs.mercurjs.com/core-concepts/commission.md): How marketplace commissions work in Mercur — rates, rules, calculation, and the commission pipeline.
+- [Order Groups](https://docs.mercurjs.com/core-concepts/order-groups.md): How multi-seller checkout creates order groups — the container that ties a single cart to multiple seller orders.
+- [Payout](https://docs.mercurjs.com/core-concepts/payout.md): How seller payouts work in Mercur — accounts, onboarding, payment capture, and the transfer pipeline.
+- [Seller](https://docs.mercurjs.com/core-concepts/seller.md): The central marketplace actor — seller profile, lifecycle, registration flows, and business rules.
+- [Seller Members](https://docs.mercurjs.com/core-concepts/seller-members.md): Multi-user seller accounts — member data, team management, store switching, and access rules.
+- [Subscriptions](https://docs.mercurjs.com/core-concepts/subscriptions.md): Recurring seller billing — platform toggle, default plans, per-seller overrides, and billing rules.
+- [API Client](https://docs.mercurjs.com/developer-guide/api-client.md): Type-safe client for consuming Mercur APIs.
+- [Blocks](https://docs.mercurjs.com/developer-guide/blocks.md): Self-contained pieces of marketplace functionality that get copied into your project as source code.
+- [CLI](https://docs.mercurjs.com/developer-guide/cli.md): Install blocks, scaffold projects, and generate types from the command line.
+- [Custom Fields](https://docs.mercurjs.com/developer-guide/custom-fields.md): Extend any Medusa entity with additional fields without modifying core code.
+- [Extending Panels](https://docs.mercurjs.com/developer-guide/extending-panels.md): Add pages, customize navigation, branding, and replace components in the admin and vendor panels.
+- [Overview](https://docs.mercurjs.com/developer-guide/overview.md): How Mercur is built — architecture, technology stack, and how the pieces fit together.
+- [Registry](https://docs.mercurjs.com/developer-guide/registry.md): Create, build, and host your own block registry.
+- [Concepts](https://docs.mercurjs.com/getting-started/concepts.md): Core concepts behind Mercur — from the Medusa foundation to blocks, panels, and the registry.
+- [Installation](https://docs.mercurjs.com/getting-started/installation.md): Install Mercur and set up your marketplace project.
+- [Introduction](https://docs.mercurjs.com/getting-started/introduction.md): Mercur is an open-source marketplace platform built on MedusaJS with a block-based architecture.
+- [Medusa Cloud deployment](https://docs.mercurjs.com/how-to-guides/medusa-cloud.md): Install and deploy Mercur on Medusa Cloud.
+- [Stripe Connect Integration](https://docs.mercurjs.com/how-to-guides/stripe-connect-integration.md): Set up Stripe Connect for marketplace payments and seller payouts — from Stripe Dashboard configuration to the full end-to-end payment lifecycle.
+- [From 1.x to 2.0](https://docs.mercurjs.com/migrations/from-1-x-to-2-0.md): What changed and how to port your existing Mercur 1.x code to 2.0.
+- [From 2.0 to 2.1](https://docs.mercurjs.com/migrations/from-2-0-to-2-1.md): What changed in Mercur 2.1 and how to upgrade an existing 2.0.x project.
+- [Migration Overview](https://docs.mercurjs.com/migrations/overview.md): Understand what changes between Mercur 1.x and 2.0 and how to migrate your project.
+- [Telemetry](https://docs.mercurjs.com/telemetry.md): Learn about the anonymous usage data collected by the Mercur CLI
+- [Stores in Mercur Admin Panel](https://docs.mercurjs.com/user-guides/admin/stores.md)
+- [Store in Mercur Vendor Panel](https://docs.mercurjs.com/user-guides/vendor/stores.md)
+- [Mercur v2.0 is here](https://docs.mercurjs.com/welcome.md): A structured marketplace platform designed for both developers and AI to extend safely.
+
+## OpenAPI Specs
+
+- [openapi](https://docs.mercurjs.com/v1/api-reference/openapi.json)
+- [combined.oas](https://docs.mercurjs.com/v1/api-reference/combined.oas.json)

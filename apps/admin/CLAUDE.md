@@ -27,14 +27,14 @@ Admin pages are file-based:
 - use file path shape to control route path
 - export route config when the page should appear in navigation
 
-Use `templates/basic/apps/admin/src/README.md` as the starter routing reference.
+Use `src/README.md` as the starter routing reference.
 
 ## Which skill to use
 
 - Any custom UI or reusable interaction pattern -> `medusa-ui-conformance`
-- Page or section work -> `admin-page-ui`
-- Form work -> `admin-form-ui`
-- Tabbed wizard work -> `admin-tab-ui`
+- Page or section work -> `dashboard-page-ui`
+- Form work -> `dashboard-form-ui`
+- Tabbed wizard work -> `dashboard-tab-ui`
 
 Load the matching skill before editing page, form, or tab-heavy UI.
 
