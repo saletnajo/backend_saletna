@@ -25,6 +25,20 @@ module.exports = defineConfig({
       resolve: "@medusajs/medusa/rbac",
     },
     {
+      resolve: '@medusajs/medusa/payment',
+      options: {
+        providers: [
+          {
+            // Cash on Delivery: authorize-only manual provider. No `id` is
+            // set on purpose so the registered provider id is exactly
+            // `pp_cod` (the loader appends `_${id}` only when an id is set).
+            resolve: './src/modules/payment-cod',
+            options: {},
+          },
+        ],
+      },
+    },
+    {
       resolve: '@mercurjs/core/modules/admin-ui',
       options: {
         appDir: path.join(__dirname, '../../apps/admin'),
