@@ -42,6 +42,32 @@ module.exports = defineConfig({
       resolve: './src/modules/cod',
     },
     {
+      resolve: '@medusajs/medusa/notification',
+      options: {
+        providers: [
+          // Configuring the module replaces Medusa's default entry, so the
+          // stock in-app feed provider is re-declared alongside our channel.
+          {
+            resolve: '@medusajs/medusa/notification-local',
+            id: 'local',
+            options: {
+              name: 'Local Notification Provider',
+              channels: ['feed'],
+            },
+          },
+          {
+            // COD SMS channel: log-transport placeholder, swap the provider
+            // service for a real gateway without touching subscribers.
+            resolve: './src/modules/sms-logger',
+            id: 'sms',
+            options: {
+              channels: ['sms'],
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: '@mercurjs/core/modules/admin-ui',
       options: {
         appDir: path.join(__dirname, '../../apps/admin'),
