@@ -24,5 +24,7 @@ export const CodOrder = model
     collected_by: model.text().nullable(),
     courier_ref: model.text().nullable(),
     settled_at: model.dateTime().nullable(),
+    // last collect/fail mutation key — replaying the same key is a no-op
+    idempotency_key: model.text().nullable(),
   })
   .indexes([{ on: ["status"] }, { on: ["order_group_id"] }])
