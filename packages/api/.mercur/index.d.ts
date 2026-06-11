@@ -521,6 +521,9 @@ export type Routes = {
         sellers: typeof import("@mercurjs/core/api/store/sellers/route") & {
             $id: typeof import("@mercurjs/core/api/store/sellers/[id]/route");
         };
+        cod: {
+            setPaymentMethod: typeof import("../../src/api/store/cod/set-payment-method/route");
+        };
         custom: typeof import("../../src/api/store/custom/route");
     };
     vendor: {
