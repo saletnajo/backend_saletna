@@ -78,8 +78,20 @@ describe("requireLogisticsSignature middleware", () => {
       headers: header ? { [LOGISTICS_SIGNATURE_HEADER]: header } : {},
     }) as never
 
-  afterEach(() => {
+  // .env may define the secret (jest inherits the shell env), so clear it
+  // before every test and restore the ambient value afterwards.
+  const ambientSecret = process.env.LOGISTICS_WEBHOOK_SECRET
+
+  beforeEach(() => {
     delete process.env.LOGISTICS_WEBHOOK_SECRET
+  })
+
+  afterAll(() => {
+    if (ambientSecret === undefined) {
+      delete process.env.LOGISTICS_WEBHOOK_SECRET
+    } else {
+      process.env.LOGISTICS_WEBHOOK_SECRET = ambientSecret
+    }
   })
 
   it("responds 503 when the shared secret is not configured", () => {
