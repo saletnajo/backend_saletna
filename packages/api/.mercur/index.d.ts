@@ -429,6 +429,10 @@ export type Routes = {
             invite: typeof import("@mercurjs/core/api/admin/sellers/invite/route");
             $id: typeof import("@mercurjs/core/api/admin/sellers/[id]/route");
         };
+        cod: {
+            collect: typeof import("../../src/api/admin/cod/collect/route");
+            fail: typeof import("../../src/api/admin/cod/fail/route");
+        };
         custom: typeof import("../../src/api/admin/custom/route");
     };
     auth: {
