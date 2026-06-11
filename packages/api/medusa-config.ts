@@ -34,9 +34,12 @@ module.exports = defineConfig({
             // `pp_cod` (the loader appends `_${id}` only when an id is set).
             resolve: './src/modules/payment-cod',
             options: {},
-          },
+          }
         ],
       },
+    },
+    {
+      resolve: './src/modules/cod',
     },
     {
       resolve: '@mercurjs/core/modules/admin-ui',
