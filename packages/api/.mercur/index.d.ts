@@ -704,4 +704,9 @@ export type Routes = {
         };
         uploads: typeof import("@mercurjs/core/api/vendor/uploads/route");
     };
+    webhooks: {
+        logistics: {
+            cod: typeof import("../../src/api/webhooks/logistics/cod/route");
+        };
+    };
 };
