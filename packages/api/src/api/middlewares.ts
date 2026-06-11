@@ -4,6 +4,7 @@ import { AdminCodCollect } from "./admin/cod/collect/validators";
 import { AdminCodFail } from "./admin/cod/fail/validators";
 import { AdminCodSettle } from "./admin/cod/settle/validators";
 import { StoreSetCodPaymentMethod } from "./store/cod/set-payment-method/validators";
+import { blockCodManualCapture } from "./utils/cod-capture-guard";
 
 export default defineMiddlewares({
     routes: [
@@ -26,6 +27,18 @@ export default defineMiddlewares({
             matcher: "/admin/cod/settle",
             methods: ["POST"],
             middlewares: [validateAndTransformBody(AdminCodSettle)],
+        },
+        // COD payments are captured exclusively by the COD collection path;
+        // the standard manual capture routes are blocked for pp_cod payments.
+        {
+            matcher: "/vendor/payments/:id/capture",
+            methods: ["POST"],
+            middlewares: [blockCodManualCapture],
+        },
+        {
+            matcher: "/admin/payments/:id/capture",
+            methods: ["POST"],
+            middlewares: [blockCodManualCapture],
         },
     ],
 });
