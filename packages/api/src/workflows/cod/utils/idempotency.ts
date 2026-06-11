@@ -1,8 +1,12 @@
 import { CodOrderStatus } from "../../../modules/cod/types"
 
-const REPLAY_STATUSES: Record<"collect" | "fail", readonly CodOrderStatus[]> = {
+const REPLAY_STATUSES: Record<
+  "collect" | "fail" | "settle",
+  readonly CodOrderStatus[]
+> = {
   collect: ["collected", "settled"],
   fail: ["failed", "out_for_delivery", "canceled"],
+  settle: ["settled"],
 }
 
 /**
@@ -14,7 +18,7 @@ const REPLAY_STATUSES: Record<"collect" | "fail", readonly CodOrderStatus[]> = {
 export function isCodReplay(
   codOrder: { status: string; idempotency_key?: string | null },
   idempotencyKey: string | undefined | null,
-  operation: "collect" | "fail"
+  operation: "collect" | "fail" | "settle"
 ): boolean {
   if (!idempotencyKey || codOrder.idempotency_key !== idempotencyKey) {
     return false

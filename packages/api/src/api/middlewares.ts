@@ -2,6 +2,7 @@ import { defineMiddlewares, validateAndTransformBody } from "@medusajs/framework
 
 import { AdminCodCollect } from "./admin/cod/collect/validators";
 import { AdminCodFail } from "./admin/cod/fail/validators";
+import { AdminCodSettle } from "./admin/cod/settle/validators";
 import { StoreSetCodPaymentMethod } from "./store/cod/set-payment-method/validators";
 
 export default defineMiddlewares({
@@ -20,6 +21,11 @@ export default defineMiddlewares({
             matcher: "/admin/cod/fail",
             methods: ["POST"],
             middlewares: [validateAndTransformBody(AdminCodFail)],
+        },
+        {
+            matcher: "/admin/cod/settle",
+            methods: ["POST"],
+            middlewares: [validateAndTransformBody(AdminCodSettle)],
         },
     ],
 });

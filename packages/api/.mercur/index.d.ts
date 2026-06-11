@@ -432,6 +432,7 @@ export type Routes = {
         cod: {
             collect: typeof import("../../src/api/admin/cod/collect/route");
             fail: typeof import("../../src/api/admin/cod/fail/route");
+            settle: typeof import("../../src/api/admin/cod/settle/route");
         };
         custom: typeof import("../../src/api/admin/custom/route");
     };

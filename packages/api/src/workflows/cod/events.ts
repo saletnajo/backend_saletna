@@ -7,4 +7,5 @@ export const CodWorkflowEvents = {
   COLLECTED: "cod.collected",
   FAILED: "cod.failed",
   PAYOUT_RECORDED: "cod.payout_recorded",
+  SETTLED: "cod.settled",
 } as const

@@ -40,4 +40,19 @@ describe("isCodReplay", () => {
     expect(isCodReplay(collected, undefined, "collect")).toBe(false)
     expect(isCodReplay(collected, null, "collect")).toBe(false)
   })
+
+  it("treats the same key against a settled record as a settle replay", () => {
+    expect(
+      isCodReplay(
+        { status: "settled", idempotency_key: "settle-1" },
+        "settle-1",
+        "settle"
+      )
+    ).toBe(true)
+  })
+
+  it("does not settle-replay a collected record (settle has not run yet)", () => {
+    // same key stored by collect, but settle never produced "settled"
+    expect(isCodReplay(collected, "key-1", "settle")).toBe(false)
+  })
 })
